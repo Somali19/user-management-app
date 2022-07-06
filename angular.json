@@ -90,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "../node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "dd495d70-deb7-4ecd-9381-cba9d60108eb"
   }
 }

@@ -1,0 +1,12 @@
+.edit-form {
+    max-width: 400px;
+    margin: auto;
+}
+.card {
+    max-width: 500px;
+    margin: auto;
+
+  }
+  .card:hover{
+    box-shadow: 2px 2px 4px 4px lightblue;
+  }

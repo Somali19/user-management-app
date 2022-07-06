@@ -1,0 +1,18 @@
+.submit-form {
+    width: 300px;
+    margin: auto;
+  }
+  .card {
+    max-width: 500px;
+    margin: auto;
+
+  }
+  .card:hover{
+    box-shadow: 2px 2px 4px 4px lightblue;
+  }
+
+  .btn .btn-info {
+    
+    color: white !important;
+    margin: auto !important;
+  }

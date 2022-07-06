@@ -1,0 +1,83 @@
+<div class="card animate__animated animate__fadeInUp">
+  <br/>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text" placeholder="enter name"
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="user.name"
+            name="enter name"
+          />
+          
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+          type="number"
+          placeholder="enter age"
+            class="form-control"
+            id="age"
+            required
+            [(ngModel)]="user.age"
+            name="age"
+          />
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <input
+            type="text"
+            placeholder="male or female"
+              class="form-control"
+              id="gender"
+              required
+              [(ngModel)]="user.gender"
+              name="gender"
+            />
+          </div>
+          <div class="form-group">
+            <label for="salary">Salary</label>
+            <input
+            placeholder="enter salary"
+            type="number"
+              class="form-control"
+              id="salary"
+              required
+              [(ngModel)]="user.salary"
+              name="salary"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+            placeholder="enter address"
+            type="text"
+              class="form-control"
+              id="address"
+              required
+              [(ngModel)]="user.address"
+              name="address"
+            />
+          </div>
+          <br/>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+        <button (click)="saveUser()" class="btn btn-info">Submit</button>
+        </div>
+        </div>
+        </div>
+      </div>
+      <br/>
+      <div *ngIf="submitted">
+        <h6>User details was submitted successfully!</h6>
+        <button class="btn btn-info" (click)="newUser()">Add</button>
+      </div>
+      <br/>
+    </div>
+  </div>
+  <br/>
+  <br/>
